@@ -56,7 +56,7 @@ header {
             justify-content: space-around;
             li {
              position: relative;
-                padding: 10px 25px;
+                padding: 20px 25px;
                  
                 a {
                                       font-family: "Verdana Regular", tahoma;
@@ -807,16 +807,18 @@ header .container{
 @media screen and (max-width:800px) {
     header {
         .container {
+        	
+        	}
             .menu-wraper {
                 position: absolute;
                 right: 0;
                 width: 100%;
+                height: 100%;
                 background-size: cover;
                 background-color: rgba(0, 0, 0, 0.5);
                 flex-direction: column;
                 transition: 0.4s;
                 transform: translateX(-100%);
-
                 li {
                     padding: 10px 30px;
                     text-align: center;
@@ -828,25 +830,67 @@ header .container{
             }
 
             .responsive-btn {
+            	position: relative;
                 padding: 5px 5px;
                 border: 2px solid #fff;
                 border-radius: 10px;
                 margin-right: 5px;
+                height: 45px;
                 width: 45px;
 
                 .row {
+                
                     width: 100%;
                     height: 3px;
                     margin-top: 5px;
                     margin-bottom: 5px;
                     background-color: #fff;
+                    transition: width,opacity,0.4s; 
                 }
             }
+            .clicked{
+        		.row{
+        				position: absolute;
+        			&:nth-child(1){
+        				top: 14px;
+        				left: 6px;
+        				width: 70%;
+        				transform: skewY(-45deg);
+        			}
+        			&:nth-child(2){
+        				opacity: 0;
+        			}
+        			&:nth-child(3){
+        				top: 14px;
+        				left: 6px;
+        				width: 70%;
+        				transform: skewY(45deg);
+        			}
+        		}
 
         }
     }
 }
 @media screen  and (max-width: 550px){
+	header{
+		.container{
+			.header-head{
+				font-size: 25px;
+			}
+		}
+	}
+	.contact{
+		.contact-head{
+			font-size: 25px;
+			line-height: 35px;
+		}
+	}
+	.we-do{
+		.we-do-head{
+			font-size: 25px;
+			line-height: 35px;
+		}
+	}
 	
 	.about{
 		.fx-container{

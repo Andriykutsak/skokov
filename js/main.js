@@ -3,7 +3,8 @@
 	let btn=document.querySelector(".responsive-btn");
 let menu=document.querySelector(".menu-wraper");
 btn.addEventListener("click",function(){
-	menu.classList.toggle("active")
+	menu.classList.toggle("active");
+	btn.classList.toggle("clicked")
 })
 let links=document.querySelectorAll(".head-link");
 links.forEach(function(i){
