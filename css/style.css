@@ -40,7 +40,7 @@ header .container {
       padding: 20px 25px; }
       header .container .menu-wraper li a {
         font-family: "Verdana Regular", tahoma;
-        font-size: 14px;
+        font-size: 18px;
         color: #fff;
         text-transform: uppercase;
         font-weight: bold;
@@ -611,7 +611,7 @@ footer {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     flex-direction: column;
     transition: 0.4s;
     transform: translateX(-100%); }
